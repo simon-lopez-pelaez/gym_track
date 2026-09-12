@@ -1,6 +1,6 @@
-# 🏋️ Aplicación Móvil de Entrenamiento Físico
+#  Aplicación Móvil de Entrenamiento Físico
 
-## 📋 Tabla de contenido
+##  Tabla de contenido
 
 - [Introducción](#introducción)
 - [Problemática](#problemática)
@@ -32,7 +32,7 @@
 
 ---
 
-## 📖 Introducción
+##  Introducción
 
 Este proyecto consiste en el desarrollo de una aplicación móvil de entrenamiento físico, construida en **Flutter y Dart**, que permite a un usuario registrar sus datos personales y corporales, organizar sus días de entrenamiento y consultar rutinas de ejercicio según el lugar donde va a entrenar (**gimnasio, casa o parque**).
 
@@ -42,7 +42,7 @@ Este documento describe el problema que resuelve la aplicación, qué se espera 
 
 ---
 
-## ⚠️ Problemática
+##  Problemática
 
 Hoy, una persona que quiere empezar a entrenar sin pagar un entrenador personal tiene dos caminos: seguir rutinas genéricas que encuentra en internet o redes sociales, que no tienen en cuenta su edad, peso, estatura ni objetivo, o inscribirse en un gimnasio, donde tampoco recibe un plan realmente personalizado si no paga un servicio adicional.
 
@@ -52,7 +52,7 @@ Durante el curso se construye el lado del usuario que entrena: el registro de su
 
 ---
 
-# 🎯 Objetivos y métrica de éxito
+#  Objetivos y métrica de éxito
 
 ## Objetivo general
 
@@ -86,7 +86,7 @@ Desarrollar una aplicación móvil en **Flutter y Dart** que permita a un usuari
 
 ---
 
-# 🔒 Restricciones
+#  Restricciones
 
 ## Fijas e innegociables
 
@@ -110,7 +110,7 @@ No se envían a ningún servidor externo, ya que son datos personales de salud y
 
 ---
 
-# 👥 Stakeholders
+#  Stakeholders
 
 - **El usuario (deportista):** usa la aplicación para registrar sus datos, definir sus horarios y consultar sus rutinas.
 
@@ -120,7 +120,7 @@ No se envían a ningún servidor externo, ya que son datos personales de salud y
 
 ---
 
-# 📦 Alcance
+#  Alcance
 
 ## Incluye
 
@@ -144,7 +144,7 @@ No se envían a ningún servidor externo, ya que son datos personales de salud y
 
 ---
 
-# 🧠 Conceptos del dominio y reglas de negocio
+#  Conceptos del dominio y reglas de negocio
 
 - **Usuario:** persona que se registra en la aplicación y usa sus datos corporales para entrenar.
 
@@ -162,7 +162,7 @@ No se envían a ningún servidor externo, ya que son datos personales de salud y
 
 ---
 
-# 📐 Reglas de negocio
+#  Reglas de negocio
 
 | Código | Regla |
 |---|---|
@@ -173,7 +173,7 @@ No se envían a ningún servidor externo, ya que son datos personales de salud y
 
 ---
 
-# 👤 Actores
+#  Actores
 
 ### Usuario / deportista
 
@@ -185,7 +185,7 @@ No se envían a ningún servidor externo, ya que son datos personales de salud y
 
 ---
 
-# 📝 Historias de usuario
+#  Historias de usuario
 
 ### HU-01 — Registrar datos corporales
 
@@ -205,7 +205,7 @@ No se envían a ningún servidor externo, ya que son datos personales de salud y
 
 ---
 
-# 🔄 Casos de uso
+#  Casos de uso
 
 ## Caso de uso: Registrar datos del perfil
 
@@ -245,7 +245,7 @@ Si el día actual no tiene ninguna rutina asignada en el horario, la aplicación
 
 ---
 
-# 📱 Flujo de pantallas
+#  Flujo de pantallas
 
 El flujo del usuario arranca en la **pantalla de perfil**, donde ingresa o consulta sus datos personales y su IMC.
 
@@ -286,7 +286,7 @@ Desde ahí llega a la **pantalla de rutinas**, donde ve el grupo muscular y los 
 
 ---
 
-# 🎨 Propuestas de diseño y mockups
+#  Propuestas de diseño y mockups
 
 ## Pantalla de perfil
 
@@ -337,14 +337,14 @@ Debajo, el grupo muscular que corresponde a ese día y una lista de los ejercici
 
 ---
 
-## 📌 Estado del proyecto
+##  Estado del proyecto
 
-> 🚧 **Proyecto en desarrollo académico.**
+>  **Proyecto en desarrollo académico.**
 >
 > La aplicación se desarrolla como parte del curso y algunas funcionalidades, como la alimentación premium, se encuentran planteadas para futuras versiones.
 
 ---
 
-## 📄 Nota
+##  Nota
 
 Este proyecto corresponde a una primera versión enfocada principalmente en el registro del usuario, organización de horarios y consulta de rutinas de entrenamiento.
