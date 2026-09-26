@@ -5,6 +5,13 @@ class PerfilScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final argumentos =
+        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>?;
+
+    final nombre = argumentos?['nombreUsuario']?.toString().trim().isNotEmpty == true
+        ? argumentos!['nombreUsuario'] as String
+        : 'Simón López';
+
     const Color cream = Color(0xFFF2EDE4);
     const Color navy = Color(0xFF2C3359);
     const Color mustard = Color(0xFFF2BE5C);
@@ -12,7 +19,6 @@ class PerfilScreen extends StatelessWidget {
     const Color mint = Color(0xFFDAEDE2);
 
     // Datos de prueba, fijos en el código (aún no se pide lógica ni guardado real)
-    const String nombre = 'Simón López';
     const int edad = 22;
     const double altura = 175; // cm
     const double peso = 70; // kg
@@ -65,10 +71,10 @@ class PerfilScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 18),
-                  const Text(
+                  Text(
                     nombre,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 26, fontWeight: FontWeight.w800, color: navy),
+                    style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w800, color: navy),
                   ),
                   const SizedBox(height: 4),
                   const Text(
@@ -113,6 +119,24 @@ class PerfilScreen extends StatelessWidget {
                       ),
                       child: const Text(
                         'Guardar cambios',
+                        style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  SizedBox(
+                    height: 54,
+                    child: OutlinedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/menu');
+                      },
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: navy,
+                        side: const BorderSide(color: navy, width: 1.5),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                      ),
+                      child: const Text(
+                        'Ir al menú principal',
                         style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
                       ),
                     ),

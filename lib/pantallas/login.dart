@@ -90,7 +90,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         height: 54,
                         child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(context, '/perfil');
+                            Navigator.pushReplacementNamed(
+                              context,
+                              '/perfil',
+                              arguments: {
+                                'nombreUsuario': _nombreController.text,
+                              },
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: mustard,
