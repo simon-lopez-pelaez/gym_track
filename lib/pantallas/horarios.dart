@@ -26,6 +26,30 @@ class _HorariosScreenState extends State<HorariosScreen> {
         itemCount: dias.length,
         itemBuilder: (context, index) {
           bool activo = diasSeleccionados[index];
+
+          return ListTile(
+            leading: Checkbox(
+              value: activo,
+              onChanged: (bool? nuevoValor) {
+                setState(() {
+                  diasSeleccionados[index] = nuevoValor ?? false;
+                });
+              },
+            ),
+            title: Text(dias[index]),
+            subtitle: Text(activo ? grupoMuscular[index] : 'Dia de descanso'),
+            onTap: activo? () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetalleRutinaScreen(
+                    dia: dias[index],
+                    grupoMuscular: grupoMuscular[index],
+                  ),
+                ),
+              );
+            }: null,
+          );
         },
       ),
     );
