@@ -19,7 +19,12 @@ class DetalleRutinaScreen extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: const Text('P-05 Detalle de rutina')),
+      backgroundColor: const Color(0xFFF2EDE4),
+      appBar: AppBar(
+        title: const Text('P-05 Detalle de rutina'),
+        backgroundColor: const Color(0xFF2C3359),
+        foregroundColor: Colors.white,
+        ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

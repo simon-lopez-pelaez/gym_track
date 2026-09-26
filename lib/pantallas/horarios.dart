@@ -21,7 +21,12 @@ class _HorariosScreenState extends State<HorariosScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('P-04 Horarios')),
+      backgroundColor: const Color(0xFFF2EDE4),
+      appBar: AppBar(
+        title: const Text('P-04 Horarios'),
+        backgroundColor: const Color(0xFF2C3359),
+        foregroundColor: Colors.white,
+      ),
       body: ListView.builder(
         itemCount: dias.length,
         itemBuilder: (context, index) {
@@ -30,6 +35,7 @@ class _HorariosScreenState extends State<HorariosScreen> {
           return ListTile(
             leading: Checkbox(
               value: activo,
+              activeColor: const Color(0xFF75B8BF),
               onChanged: (bool? nuevoValor) {
                 setState(() {
                   diasSeleccionados[index] = nuevoValor ?? false;
